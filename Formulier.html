@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title> Dit is een groot formulier </title>
+    
+</head>
+
+<H1>Formulier voor receptenwebsite.</H1>
+
+<form name="CONTACT" method="POST" data-netlify="true">
+    <p>
+        <label>Naam: <input type="text" name="name" /></label>
+    </p>
+    <p>
+        <label>Email: <input type="email" name="email" /></label>
+    </p>
+    <p>
+        <label>Telefoonnummer: <input type="tel" name="tel" /> </label>
+    </p>
+    <p>
+        <label>Leeftijd: <input type="number" name="number" min="18" max="115"></label>
+    </p>
+    <p>
+        <label for="birthday">Geboortedatum:</label>
+        <input type="date" id="birthday" name="Geboortedatum">
+    </p>
+    <p>
+        <label>Geslacht </label>
+        <input type="radio" id="Man" name="geslacht" value="Man">
+        <label for="Man">Man</label>
+        <input type="radio" id="Vrouw" name="geslacht" value="Vrouw">
+        <label for="Vrouw">Vrouw</label>
+        <input type="radio" id="anders/wilnietzeggen" name="geslacht" value="anders/wilnietzeggen">
+        <label for="anders/wilnietzeggen">Anders/ wil niet zeggen </label><br>
+    </p>
+    <p>
+        <label>Favoriete Keuken </label> <br>
+        <input type="checkbox" id="Gerecht1" name="Favorietekeuken" value="Frans">
+        <label for="Gerecht1"> Frans</label><br>
+        <input type="checkbox" id="Gerecht2" name="Favorietekeuken" value="Italiaans">
+        <label for="Gerecht2"> Italiaans</label><br>
+        <input type="checkbox" id="Gerecht3" name="Favorietekeuken" value="Spaans">
+        <label for="Gerecht3"> Spaans</label><br>
+        <input type="checkbox" id="Gerecht4" name="Favorietekeuken" value="Arabisch">
+        <label for="Gerecht4"> Arabisch</label>
+    </p>
+    <p>
+        <label for="favcolor">Wat is je favoriete schort kleur:</label>
+        <input type="color" id="favcolor" name="favcolor">
+    </p>
+    <p>
+        <label for="Biografie">Schrijf hier je biografie: </label>
+        <textarea id="Biografie" name="Biografie" rows="5" cols="50">
+    </textarea>
+    </p>
+    <p>
+        <label>Upload je laatste recept:</label>
+        <input type="file" name="bestanduploaden">
+    <p>
+        <label>URL naar jouw laatste receptenwebsite: </label>
+        <input type="url" pattern="^(http|https|ftp):\/\/.+">inclusief http://, https:// of ftp://>
+
+    </p>
+    <p>
+        <input type="reset">
+    </p>
+    <p>
+        <input type="submit" value="Submit">
+    </p>
+
+
+
+</form>
+
+
+</html>
